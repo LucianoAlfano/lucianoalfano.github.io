@@ -1,4 +1,6 @@
-/* Basic reset */
+/* ------------------------------
+   Basic reset
+------------------------------ */
 
 * {
     box-sizing: border-box;
@@ -17,7 +19,9 @@ body {
 }
 
 
-/* Navigation */
+/* ------------------------------
+   Navigation
+------------------------------ */
 
 header {
     background-color: #ffffff;
@@ -57,7 +61,9 @@ header {
 }
 
 
-/* Main content */
+/* ------------------------------
+   Main content
+------------------------------ */
 
 main {
     max-width: 1100px;
@@ -104,7 +110,9 @@ li {
 }
 
 
-/* Homepage hero */
+/* ------------------------------
+   Homepage hero
+------------------------------ */
 
 .hero {
     max-width: 850px;
@@ -121,7 +129,7 @@ li {
 }
 
 .hero-description,
-.page-heading p {
+.page-heading > p:not(.eyebrow) {
     max-width: 760px;
     color: #52606d;
     font-size: 20px;
@@ -135,7 +143,9 @@ li {
 }
 
 
-/* Buttons */
+/* ------------------------------
+   Buttons
+------------------------------ */
 
 .button {
     display: inline-block;
@@ -166,7 +176,9 @@ li {
 }
 
 
-/* Cards */
+/* ------------------------------
+   Cards
+------------------------------ */
 
 .card-grid,
 .project-grid {
@@ -188,13 +200,18 @@ li {
 }
 
 .card p,
-.project-card p {
-    margin-bottom: 0;
+.project-card > p:not(.project-type) {
     color: #52606d;
 }
 
+.card p {
+    margin-bottom: 0;
+}
 
-/* Skills */
+
+/* ------------------------------
+   Skills
+------------------------------ */
 
 .skill-list {
     display: flex;
@@ -212,15 +229,21 @@ li {
 }
 
 
-/* Project page */
+/* ------------------------------
+   Projects page
+------------------------------ */
 
 .page-heading {
     max-width: 850px;
 }
 
-.project-content h3 {
+.project-card h3 {
     margin-top: 25px;
     font-size: 17px;
+}
+
+.project-card ul {
+    margin-bottom: 0;
 }
 
 .notice {
@@ -228,8 +251,14 @@ li {
     border-left: 5px solid #0069a8;
 }
 
+.notice p {
+    margin-bottom: 0;
+}
 
-/* Resume page */
+
+/* ------------------------------
+   Resume page
+------------------------------ */
 
 .resume-section {
     margin-bottom: 28px;
@@ -239,8 +268,15 @@ li {
     margin-top: 25px;
 }
 
+.resume-section p:last-child,
+.resume-section ul:last-child {
+    margin-bottom: 0;
+}
 
-/* Contact page */
+
+/* ------------------------------
+   Contact page
+------------------------------ */
 
 .contact-card {
     max-width: 700px;
@@ -254,10 +290,17 @@ li {
     color: #0069a8;
     font-size: 18px;
     font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+.contact-link:hover {
+    color: #004f80;
 }
 
 
-/* Footer */
+/* ------------------------------
+   Footer
+------------------------------ */
 
 footer {
     padding: 25px;
@@ -272,10 +315,11 @@ footer p {
 }
 
 
-/* Mobile layout */
+/* ------------------------------
+   Mobile layout
+------------------------------ */
 
 @media (max-width: 700px) {
-
     .navigation {
         align-items: flex-start;
         flex-direction: column;
@@ -296,7 +340,7 @@ footer p {
     }
 
     .hero-description,
-    .page-heading p {
+    .page-heading > p:not(.eyebrow) {
         font-size: 18px;
     }
 
