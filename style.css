@@ -1,6 +1,4 @@
-/* ------------------------------
-   Basic reset
------------------------------- */
+/* Basic reset */
 
 * {
     box-sizing: border-box;
@@ -19,9 +17,7 @@ body {
 }
 
 
-/* ------------------------------
-   Navigation
------------------------------- */
+/* Navigation */
 
 header {
     background-color: #ffffff;
@@ -61,9 +57,7 @@ header {
 }
 
 
-/* ------------------------------
-   Main content
------------------------------- */
+/* Main content */
 
 main {
     max-width: 1100px;
@@ -110,9 +104,7 @@ li {
 }
 
 
-/* ------------------------------
-   Homepage hero
------------------------------- */
+/* Hero and headings */
 
 .hero {
     max-width: 850px;
@@ -135,6 +127,10 @@ li {
     font-size: 20px;
 }
 
+.page-heading {
+    max-width: 850px;
+}
+
 .button-group {
     display: flex;
     flex-wrap: wrap;
@@ -143,9 +139,7 @@ li {
 }
 
 
-/* ------------------------------
-   Buttons
------------------------------- */
+/* Buttons */
 
 .button {
     display: inline-block;
@@ -176,14 +170,12 @@ li {
 }
 
 
-/* ------------------------------
-   Cards
------------------------------- */
+/* Cards */
 
 .card-grid,
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
 }
 
@@ -209,9 +201,7 @@ li {
 }
 
 
-/* ------------------------------
-   Skills
------------------------------- */
+/* Skills */
 
 .skill-list {
     display: flex;
@@ -229,13 +219,7 @@ li {
 }
 
 
-/* ------------------------------
-   Projects page
------------------------------- */
-
-.page-heading {
-    max-width: 850px;
-}
+/* Projects */
 
 .project-card h3 {
     margin-top: 25px;
@@ -256,9 +240,7 @@ li {
 }
 
 
-/* ------------------------------
-   Resume page
------------------------------- */
+/* Resume */
 
 .resume-section {
     margin-bottom: 28px;
@@ -274,9 +256,7 @@ li {
 }
 
 
-/* ------------------------------
-   Contact page
------------------------------- */
+/* Contact */
 
 .contact-card {
     max-width: 700px;
@@ -298,9 +278,7 @@ li {
 }
 
 
-/* ------------------------------
-   Footer
------------------------------- */
+/* Footer */
 
 footer {
     padding: 25px;
@@ -315,11 +293,10 @@ footer p {
 }
 
 
-/* ------------------------------
-   Mobile layout
------------------------------- */
+/* Mobile layout */
 
 @media (max-width: 700px) {
+
     .navigation {
         align-items: flex-start;
         flex-direction: column;
