@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Luciano Alfano engineering portfolio: embedded systems, PCB design, tooling, CAD, fabrication, and game development.">
+  <title>Luciano Alfano | Automotive &amp; Electrical Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=9">
+  <script src="script.js?v=9" defer></script>
+</head>
+<body id="top">
+<div class="scroll-progress" aria-hidden="true"></div>
+<header class="site-header">
+  <nav class="navbar shell" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="Luciano Alfano engineering portfolio">
+      <span class="brand-mark">LA</span>
+      <span class="brand-text"><strong>Luciano Alfano</strong><small>BUILD · TEST · REFINE</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+    <div class="nav-links" id="nav-links">
+      <a class="active" href="index.html">Projects</a>
+      <a href="Luciano%20Alfano%20Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-cta" href="https://wildspark.netlify.app/" target="_blank" rel="noopener noreferrer">Play Wildspark ↗</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="page-hero shell reveal">
+    <p class="kicker">&#9654; PLAYER 1 &middot; AUTOMOTIVE &amp; ELECTRICAL ENGINEER</p>
+    <h1 class="arcade-title">LUCIANO<br>ALFANO</h1>
+    <p class="hero-sub">Engineering ideas into <span class="gradient-text">working systems.</span></p>
+    <p class="hero-summary">Automotive systems, embedded electronics, PCB design, CAD, fabrication, and interactive software.</p>
+    <div class="hero-actions">
+      <a class="button primary" href="#projects-start">EXPLORE PROJECTS ↓</a>
+      <a class="button ghost" href="Luciano%20Alfano%20Resume.pdf" target="_blank" rel="noopener">VIEW RESUME ↗</a>
+    </div>
+    <a class="press-start" href="#projects-start">PRESS START</a>
+  </section>
+
+  <section class="project-intro shell reveal" id="projects-start">
+    <div><p class="kicker">SELECT A LEVEL</p><h2>Five builds. One iterative engineering process.</h2></div>
+    <p>From architecture and prototypes to functional validation. Jump to a project or scroll through every case study. Click any image to view it full size.</p>
+  </section>
+
+  <nav class="project-index shell" aria-label="Project index">
+    <a href="#cubesat"><span>01</span>CUBESAT</a>
+    <a href="#laser-fixture"><span>02</span>LASER FIXTURE</a>
+    <a href="#wildspark"><span>03</span>WILDSPARK</a>
+    <a href="#compact-usb"><span>04</span>USB PCB</a>
+    <a href="#game-controller"><span>05</span>PICO CONTROLLER</a>
+  </nav>
+
+  <section class="project shell" id="cubesat">
+    <div class="project-title reveal"><div><p class="tag">01 / EMBEDDED SYSTEMS + POWER ELECTRONICS</p><h2>ChantSat-1 3U CubeSat Demonstrator</h2></div></div>
+    <div class="project-grid reveal">
+        <figure class="photo hero-photo"><img src="cubesat-team-presentation.jpg" alt="Final project presentation with the completed CubeSat demonstrator hardware" loading="lazy"><figcaption>Final project presentation with the completed ChantSat-1 demonstrator hardware.</figcaption></figure>
+        <article class="story"><h3>OVERVIEW</h3><p>Led end-to-end development of the first physical model built for Coastal Carolina University&#8217;s 3U CubeSat program, progressing from basic Arduino experience through system architecture, breadboard validation, perfboard integration, testing, and public presentation.</p><h3>INTEGRATED FUNCTIONS</h3><ul><li>Switchable solar and wall-power operation</li><li>Rechargeable battery with MPPT charge controller</li><li>Voltage and current telemetry displays</li><li>MicroSD data logging</li><li>ESP32 Bluetooth image reception</li><li>TFT display simulating a satellite &#8220;selfie stick&#8221; payload</li></ul></article>
+        <figure class="photo"><img src="cubesat-system-diagram.jpg" alt="CubeSat system wiring diagram" loading="lazy"><figcaption>Original system architecture defining power, telemetry, imaging, display, and data-logging interfaces.</figcaption></figure>
+        <figure class="photo"><img src="cubesat-breadboard.jpg" alt="Breadboard prototype of the CubeSat system" loading="lazy"><figcaption>Breadboard prototype used to validate the architecture before permanent integration.</figcaption></figure>
+        <figure class="photo"><img src="cubesat-solar-test.jpg" alt="CubeSat demonstrator connected to a solar panel during testing" loading="lazy"><figcaption>Solar-power and power-management validation.</figcaption></figure>
+        <figure class="photo wide"><img src="cubesat-perfboard-front.jpg" alt="Integrated CubeSat demonstrator on perfboard" loading="lazy"><figcaption>Final integrated perfboard platform with source switching, battery cutoff, telemetry, and imaging subsystems.</figcaption></figure>
+        <figure class="photo"><img src="cubesat-perfboard-rear.jpg" alt="Rear wiring of the CubeSat perfboard" loading="lazy"><figcaption>Hand-wired underside showing subsystem routing.</figcaption></figure>
+        <figure class="photo wide"><img src="cubesat-professional-presentation.jpg" alt="Presenting the ChantSat-1 payload architecture to a professional audience" loading="lazy"><figcaption>Presented the payload architecture and system operation to a professional audience.</figcaption></figure>
+        <figure class="photo"><img src="cubesat-capstone-presentation.jpg" alt="Capstone display with the powered demonstrator, solar panel, and poster" loading="lazy"><figcaption>Public capstone display with the powered demonstrator, test equipment, and technical poster.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="project shell" id="laser-fixture">
+    <div class="project-title reveal"><div><p class="tag">02 / MECHANICAL DESIGN + TOOLING</p><h2>Laser Engraver Fixture</h2></div></div>
+    <div class="project-grid reveal">
+        <figure class="photo hero-photo"><img src="laser-fixture-improved-shield.jpg" alt="Improved laser fixture with a black shield around the laser head" loading="lazy"><figcaption>Improved revision with refined printed parts and a protective laser-head shield.</figcaption></figure>
+        <article class="story"><h3>OVERVIEW</h3><p>Designed and built an adjustable laser engraver fixture from 3D-printed components, metal guide rods, bearings, and threaded adjustment hardware. The design moved from a whiteboard sketch to CAD, a first build, and an improved revision.</p><h3>ITERATION HIGHLIGHTS</h3><ul><li>Vertical adjustment through a lead screw and handwheel</li><li>Parallel guide rods with bearing-supported motion</li><li>Horizontal extension for laser-head positioning</li><li>Revised printed geometry after prototype evaluation</li><li>Added laser-head shield to protect onlookers</li></ul></article>
+        <figure class="photo"><img src="laser-fixture-concept-sketch.jpg" alt="Whiteboard concept sketch of the fixture" loading="lazy"><figcaption>Initial concept sketch of the crank, lead screw, guides, and mounting.</figcaption></figure>
+        <figure class="photo"><img src="laser-fixture-cad-assembly.png" alt="CAD assembly of the fixture" loading="lazy"><figcaption>CAD assembly combining printed parts with rods, bearings, and a lead screw.</figcaption></figure>
+        <figure class="photo"><img src="laser-fixture-prototype.jpg" alt="First constructed version of the fixture" loading="lazy"><figcaption>First functional build used to validate rigidity and adjustment range.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="project shell" id="wildspark">
+    <div class="project-title reveal"><div><p class="tag">03 / WEB GAME + MOBILE APP</p><h2>Wildspark</h2></div><a class="button primary" href="https://wildspark.netlify.app/" target="_blank" rel="noopener noreferrer">PLAY LIVE ↗</a></div>
+    <div class="project-grid reveal">
+        <figure class="photo hero-photo"><img src="wildspark-hero.png" alt="Wildspark characters in a bright low-poly world" loading="lazy"><figcaption>Character encounter in Wildspark&#8217;s low-poly world.</figcaption></figure>
+        <article class="story"><h3>OVERVIEW</h3><p>A stylized 3D browser game and mobile experience built around exploration, character encounters, and platforming. It evolved from a 2D handheld-style concept through a block-style 3D beta to its current low-poly look.</p><h3>HIGHLIGHTS</h3><ul><li>Custom low-poly environments and characters</li><li>Third-person exploration and platforming</li><li>Touchscreen controls, menus, and inventory</li><li>Live browser deployment through Netlify</li></ul></article>
+        <figure class="photo"><img src="wildspark-exploration.png" alt="Wildspark player exploring a grassy landscape" loading="lazy"><figcaption>Open-area exploration.</figcaption></figure>
+        <figure class="photo wide"><img src="wildspark-lava-level.png" alt="Wildspark platforming level above lava" loading="lazy"><figcaption>Platforming sequence above a lava hazard.</figcaption></figure>
+        <div class="phone-row">
+        <figure class="photo"><img src="wildspark-beta-2d.jpg" alt="Early 2D Wildspark prototype" loading="lazy"><figcaption>Beta 1: 2D concept inspired by classic handheld games.</figcaption></figure>
+        <figure class="photo"><img src="wildspark-beta-3d.jpg" alt="Early block-style 3D Wildspark prototype" loading="lazy"><figcaption>Beta 2: block-style 3D prototype.</figcaption></figure>
+        <figure class="photo"><img src="wildspark-mobile-ui.jpg" alt="Current Wildspark mobile interface" loading="lazy"><figcaption>Current mobile interface with touch controls and menus.</figcaption></figure>
+        </div>
+    </div>
+  </section>
+
+  <section class="project shell" id="compact-usb">
+    <div class="project-title reveal"><div><p class="tag">04 / COMPACT ELECTRONICS</p><h2>Compact USB On/Off Control PCB</h2></div></div>
+    <div class="project-grid reveal">
+        <figure class="photo hero-photo"><img src="compact-usb-control-pcb.png" alt="Compact USB control PCB 3D model" loading="lazy"><figcaption>PCB design render.</figcaption></figure>
+        <article class="story"><h3>OVERVIEW</h3><p>Designed, ordered, assembled, and validated a compact inline USB control PCB. The connected device stays powered off and only receives power while the momentary button is held.</p><h3>PROJECT FOCUS</h3><ul><li>Compact board outline and connector placement</li><li>USB input and output integration</li><li>Normally-off momentary pushbutton operation</li><li>PCB ordering, assembly, and soldering</li><li>Functional power testing with a live device</li></ul></article>
+        <div class="duo-row">
+        <figure class="photo"><img src="usb-control-device-off.jpg" alt="Assembled PCB with the button released and the device off" loading="lazy"><figcaption>Button released: the connected device stays off.</figcaption></figure>
+        <figure class="photo"><img src="usb-control-device-on.jpg" alt="Assembled PCB with the button held and the red light on" loading="lazy"><figcaption>Button held: the device powers on and the red light turns on.</figcaption></figure>
+        </div>
+    </div>
+  </section>
+
+  <section class="project shell" id="game-controller">
+    <div class="project-title reveal"><div><p class="tag">05 / PCB + 3D PRINTING</p><h2>Raspberry Pi Pico Game Controller</h2></div></div>
+    <div class="project-grid reveal">
+        <figure class="photo hero-photo"><img src="controller-pcb-assembly.png" alt="Controller PCB inside a 3D-printable shell" loading="lazy"><figcaption>Controller PCB integrated into the printable enclosure.</figcaption></figure>
+        <article class="story"><h3>OVERVIEW</h3><p>A simple video game controller built around a Raspberry Pi Pico with a custom 3D-printable shell.</p><h3>PROJECT FOCUS</h3><ul><li>Raspberry Pi Pico-based controls</li><li>Four directional pushbuttons</li><li>Custom-shaped PCB and mounting points</li><li>PCB-to-enclosure integration</li></ul></article>
+        <figure class="photo full"><img src="controller-pcb.png" alt="Controller PCB with Raspberry Pi Pico and four buttons" loading="lazy"><figcaption>Custom PCB layout with the Pico and directional inputs.</figcaption></figure>
+    </div>
+  </section>
+
+</main>
+<footer>
+  <div class="footer-inner shell"><strong>LUCIANO ALFANO</strong><span>AUTOMOTIVE &amp; ELECTRICAL ENGINEER</span><span>© <span id="year"></span></span></div>
+</footer>
+<div class="lightbox" id="image-lightbox" role="dialog" aria-modal="true" aria-label="Full-size project image" hidden>
+  <button class="lightbox-close" type="button" aria-label="Close full-size image">X</button>
+  <img class="lightbox-image" src="" alt="">
+  <p class="lightbox-caption"></p>
+</div>
+</body>
+</html>
