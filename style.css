@@ -179,14 +179,25 @@ body.lightbox-open{overflow:hidden}
   .contact-intro{padding:26px 22px}
 }
 .hero-sub .gradient-text {
-  background: none !important;
+  background: linear-gradient(
+    90deg,
+    #9ffcff 0%,
+    #7ddcff 30%,
+    #d7b8ff 65%,
+    #ff9ed8 100%
+  ) !important;
+
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
   color: #ffffff !important;
-  -webkit-text-fill-color: #ffffff !important;
+  -webkit-text-fill-color: transparent !important;
+
   filter: none !important;
   opacity: 1 !important;
+
   text-shadow:
-    0 0 8px rgba(255, 255, 255, 0.8),
-    0 0 18px rgba(120, 220, 255, 0.6) !important;
+    0 0 8px rgba(130, 225, 255, 0.35),
+    0 0 16px rgba(210, 160, 255, 0.20) !important;
 }
 
 
