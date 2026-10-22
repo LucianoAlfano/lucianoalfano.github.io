@@ -178,15 +178,17 @@ body.lightbox-open{overflow:hidden}
   .project-title{padding:18px 20px}
   .contact-intro{padding:26px 22px}
 }
-.gradient-text {
-  background: linear-gradient(90deg, #ffffff, #dff8ff, #f3e8ff, #ffffff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #ffffff;
-
-  filter: brightness(1.35);
-  text-shadow: 0 0 18px rgba(180, 220, 255, 0.35);
+.hero-sub .gradient-text {
+  background: none !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  filter: none !important;
+  opacity: 1 !important;
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 0.8),
+    0 0 18px rgba(120, 220, 255, 0.6) !important;
 }
+
+
 
 
