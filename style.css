@@ -179,11 +179,14 @@ body.lightbox-open{overflow:hidden}
   .contact-intro{padding:26px 22px}
 }
 .gradient-text {
-  background: linear-gradient(90deg, #a5f3fc, #c4b5fd, #fbcfe8);
+  background: linear-gradient(90deg, #ffffff, #dff8ff, #f3e8ff, #ffffff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #ffffff;
-  filter: brightness(1.15);
+
+  filter: brightness(1.35);
+  text-shadow: 0 0 18px rgba(180, 220, 255, 0.35);
 }
+
 
